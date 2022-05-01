@@ -1,7 +1,7 @@
-# PyGame tutorial with Tim 6
-# Sound Effects, Music & More Collision
-#  Finishing Touches & Next Steps
+# TODO: add restart or end-game
+
 import pygame
+
 pygame.init()
 
 win = pygame.display.set_mode((500, 480))
