@@ -1,4 +1,5 @@
 # TODO: add restart or end-game
+# TODO: needs refactoring(((
 
 import pygame
 
@@ -160,7 +161,7 @@ class Enemy(object):
 		# print("hit!")
 
 
-def redrawGameWindow():
+def redraw_game_window():
 	win.blit(bg, (0, 0))
 	text = font.render('Score: ' + str(score), True, (0, 0, 0))
 	win.blit(text, (350, 10))
@@ -178,6 +179,7 @@ goblin = Enemy(0, 415, 64, 64, 450)
 shootLoop = 0
 bullets = []
 run = True
+
 while run:
 	clock.tick(27)
 
@@ -257,6 +259,6 @@ while run:
 			man.isJump = False
 			man.jumpCount = 10
 
-	redrawGameWindow()
+	redraw_game_window()
 
 pygame.quit()
